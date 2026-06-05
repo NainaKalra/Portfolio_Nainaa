@@ -1,0 +1,39 @@
+/* ═══════════════════════════════════════
+   NAINA KALRA PORTFOLIO — DESIGN TOKENS
+   ═══════════════════════════════════════ */
+
+:root {
+  /* Colors */
+  --white:        #f8f6ff;
+  --off-white:    #ede9f8;
+  --purple-light: #c4b5fd;
+  --purple-mid:   #9b77f5;
+  --purple:       #7c3aed;
+  --purple-dark:  #4c1d95;
+  --purple-glow:  rgba(124, 58, 237, 0.35);
+  --black:        #09080f;
+  --black-soft:   #110f1e;
+  --black-card:   #16132a;
+  --muted:        #6b6384;
+
+  /* Typography */
+  --font-display: 'Playfair Display', serif;
+  --font-body:    'Inter', sans-serif;
+  --font-mono: 'Inter', monospace;
+
+  /* Spacing */
+  --section-pad: clamp(80px, 10vw, 140px);
+
+  /* Transitions */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* Borders */
+  --border: 1px solid rgba(196, 181, 253, 0.12);
+  --border-hover: 1px solid rgba(196, 181, 253, 0.4);
+
+  /* Shadows */
+  --glow-sm: 0 0 20px rgba(124, 58, 237, 0.2);
+  --glow-md: 0 0 40px rgba(124, 58, 237, 0.3);
+  --glow-lg: 0 0 80px rgba(124, 58, 237, 0.25);
+}

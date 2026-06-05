@@ -1,0 +1,108 @@
+/* ═══════════════════════════════════
+   SKILLS SECTION
+   ═══════════════════════════════════ */
+
+#skills {
+    position: relative;
+    padding: clamp(60px, 8vw, 100px) clamp(20px, 4vw, 60px);
+    border-top: var(--border);
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.skills-inner {
+    max-width: 1100px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    margin: 0 auto;
+}
+
+.skills-headline {
+    font-family: var(--font-display);
+    font-size: clamp(2.4rem, 4vw, 3.8rem);
+    font-weight: 700;
+    color: var(--white);
+    line-height: 1.08;
+    letter-spacing: -0.025em;
+    text-align: center;
+}
+
+.skills-headline em {
+    font-style: italic;
+    font-weight: 400;
+    color: var(--purple-light);
+}
+
+/* ── GROUP ────────────────────────── */
+.skills-group {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.skills-category {
+    font-family: var(--font-body);
+    font-size: 1rem;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--purple-mid);
+    justify-content: center;
+}
+
+/* ── GRID ─────────────────────────── */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+    width: 100%;
+}
+
+/* ── SKILL ITEM ───────────────────── */
+.skill-card {
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    padding: 14px 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 14px;
+    cursor: default;
+    border-bottom: 1px solid rgba(196, 181, 253, 0.06);
+    transition: padding-left 0.2s ease;
+}
+
+.skill-card:hover {
+    padding-left: 24px;
+}
+
+.skill-card i {
+    font-size: 1.8rem;
+    flex-shrink: 0;
+    color: rgba(248, 246, 255, 0.85);
+}
+
+.skill-card span {
+    font-family: var(--font-body);
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: rgba(248, 246, 255, 0.88);
+    letter-spacing: 0.01em;
+}
+
+/* ── RESPONSIVE ───────────────────── */
+@media (max-width: 960px) {
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 580px) {
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+}

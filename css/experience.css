@@ -1,0 +1,277 @@
+/* ═══════════════════════════════════
+   EXPERIENCE / ACTIVITIES SECTION
+   ═══════════════════════════════════ */
+
+#experience {
+    position: relative;
+    padding: clamp(60px, 8vw, 100px) clamp(20px, 4vw, 60px);
+    border-top: var(--border);
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.exp-inner {
+    max-width: 1100px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 56px;
+}
+
+.exp-headline {
+    font-family: var(--font-display);
+    font-size: clamp(2.4rem, 4vw, 3.8rem);
+    font-weight: 700;
+    color: var(--white);
+    line-height: 1.08;
+    letter-spacing: -0.025em;
+}
+
+.exp-headline em {
+    font-style: italic;
+    font-weight: 400;
+    color: var(--purple-light);
+}
+
+/* ── TABS LAYOUT ──────────────────── */
+.exp-tabs-section {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.exp-category {
+    font-family: var(--font-body);
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--purple-mid);
+}
+
+.exp-tabs-wrap {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 20px;
+    align-items: start;
+}
+
+/* ── LEFT LIST ────────────────────── */
+.exp-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.exp-tab {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 14px 16px;
+    border-radius: 10px;
+    border: 1px solid rgba(196, 181, 253, 0.08);
+    background: rgba(16, 12, 32, 0.55);
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.exp-tab:hover {
+    border-color: rgba(196, 181, 253, 0.2);
+    background: rgba(16, 12, 32, 0.55);
+}
+
+.exp-tab.active {
+    border-color: rgba(155, 119, 245, 0.7);
+    background: rgba(16, 12, 32, 0.55);
+    box-shadow: 0 0 0 1px rgba(155, 119, 245, 0.25), 0 4px 24px rgba(124, 58, 237, 0.22);
+}
+
+/* ── TAB ICON — logo image ────────── */
+.exp-tab-icon {
+    width: 70px;
+    height: 70px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.92);
+    border: 1px solid rgba(196, 181, 253, 0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    overflow: hidden;
+    transition: all 0.25s;
+    padding: 5px;
+}
+
+.exp-tab-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+.exp-tab.active .exp-tab-icon {
+    border-color: rgba(214, 209, 234, 0.841);
+    box-shadow: 0 0 14px rgba(124, 58, 237, 0.35);
+}
+
+.exp-tab-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    min-width: 0;
+}
+
+.exp-tab-title {
+    font-family: var(--font-body);
+    font-size: 1rem;
+    font-weight: 500;
+    color: rgba(248, 246, 255, 0.75);
+    line-height: 1.2;
+}
+
+.exp-tab.active .exp-tab-title {
+    color: var(--white);
+}
+
+.exp-tab-org {
+    font-family: var(--font-body);
+    font-size: 0.72rem;
+    color: rgba(196, 181, 253, 0.45);
+    letter-spacing: 0.03em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.exp-tab.active .exp-tab-org {
+    color: var(--purple-light);
+}
+
+/* ── RIGHT DETAIL ─────────────────── */
+.exp-detail {
+    background: rgba(16, 12, 32, 0.55);
+    border: 1px solid rgba(211, 207, 228, 0.877);
+    border-radius: 12px;
+    padding: 32px 36px;
+    min-height: 220px;
+    position: relative;
+    overflow: hidden;
+    box-shadow:
+        0 0 0 1px rgba(124, 58, 237, 0.06),
+        0 8px 40px rgba(0, 0, 0, 0.35),
+        inset 0 1px 0 rgba(196, 181, 253, 0.07);
+    backdrop-filter: blur(12px);
+    transition: border-color 0.3s;
+}
+
+.exp-detail::before {
+    content: '';
+    position: absolute;
+    top: -40%;
+    right: -10%;
+    width: 280px;
+    height: 280px;
+    background: radial-gradient(ellipse, rgba(124, 58, 237, 0.07) 0%, transparent 65%);
+    pointer-events: none;
+}
+
+.exp-detail-panel {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    animation: fadeIn 0.3s ease;
+}
+
+.exp-detail-panel.active {
+    display: flex;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.exp-detail-date {
+    font-family: var(--font-body);
+    font-size: 0.78rem;
+    font-weight: 500;
+    color: rgba(196, 181, 253, 0.55);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.exp-detail-title {
+    font-family: var(--font-display);
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: var(--white);
+    line-height: 1.15;
+}
+
+.exp-detail-org {
+    font-family: var(--font-body);
+    font-size: 0.88rem;
+    font-weight: 500;
+    color: var(--purple-light);
+}
+
+.exp-detail-divider {
+    width: 40px;
+    height: 1.5px;
+    background: linear-gradient(to right, var(--purple-mid), transparent);
+    margin: 4px 0;
+}
+
+.exp-detail-desc {
+    font-family: var(--font-body);
+    font-size: 0.92rem;
+    font-weight: 300;
+    color: rgba(248, 246, 255, 0.68);
+    line-height: 1.85;
+}
+
+
+/* ── DETAIL HEADER with logo ─────── */
+.exp-detail-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.exp-detail-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    flex: 1;
+}
+
+.exp-detail-logo {
+    width: 90px;
+    height: 60px;
+    object-fit: contain;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 8px;
+    flex-shrink: 0;
+    opacity: 0.9;
+}
+
+/* ── RESPONSIVE ───────────────────── */
+@media (max-width: 768px) {
+    .exp-tabs-wrap {
+        grid-template-columns: 1fr;
+    }
+
+    .exp-detail {
+        padding: 24px;
+    }
+}
