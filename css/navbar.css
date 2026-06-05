@@ -54,6 +54,8 @@
   display: flex;
   align-items: center;
   gap: clamp(1.5rem, 3vw, 2.8rem);
+  margin-left: auto;
+  /* margin-right: 2 rem; */
 }
 
 .nav-link {
@@ -93,6 +95,7 @@
 
 /* ── CONNECT BUTTON ───────────────── */
 .nav-cta {
+  margin-left: 2.5rem;
   font-family: var(--font-body);
   font-size: 0.80rem;
   letter-spacing: 0.18em;
