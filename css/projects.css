@@ -1,6 +1,4 @@
-/* ═══════════════════════════════════
-   PROJECTS SECTION
-   ═══════════════════════════════════ */
+/* projects */
 
 #projects {
     position: relative;
@@ -43,14 +41,14 @@
     color: var(--purple-light);
 }
 
-/* ── 2x2 GRID ─────────────────────── */
+/* 2 by 2 grid */
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 42px;
 }
 
-/* ── CARD ─────────────────────────── */
+/* cards */
 .project-card {
     background: rgba(16, 12, 32, 0.55);
     border: 1px solid rgba(228, 224, 242, 0.9);
@@ -88,7 +86,7 @@
     transform: translateY(-4px);
 }
 
-/* ── CARD BODY ────────────────────── */
+/* body for card */
 .project-card-body {
     padding: 28px 30px 30px;
     display: flex;
@@ -115,7 +113,7 @@
     flex: 1;
 }
 
-/* ── TAGS ─────────────────────────── */
+/* tags  */
 .project-tags {
     display: flex;
     flex-wrap: wrap;
@@ -141,7 +139,7 @@
     font-size: 16px;
 }
 
-/* ── LINK ─────────────────────────── */
+/* link */
 .project-link {
     font-family: var(--font-body);
     font-size: 1rem;
@@ -161,7 +159,7 @@
     transform: translateX(4px);
 }
 
-/* ── RESPONSIVE ───────────────────── */
+/* responsive styling */
 @media (max-width: 720px) {
     .projects-grid {
         grid-template-columns: 1fr;

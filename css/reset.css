@@ -1,6 +1,4 @@
-/* ═══════════════════════════════════
-   RESET & BASE
-   ═══════════════════════════════════ */
+/* reset / base */
 
 *, *::before, *::after {
   margin: 0;
@@ -53,7 +51,7 @@ ul, ol {
   list-style: none;
 }
 
-/* ── SCROLLBAR ─────────────────────── */
+/* scrollbar */
 ::-webkit-scrollbar {
   width: 4px;
 }
@@ -65,13 +63,13 @@ ul, ol {
   border-radius: 2px;
 }
 
-/* ── SELECTION ─────────────────────── */
+/* selection */
 ::selection {
   background: var(--purple);
   color: var(--white);
 }
 
-/* ── UTILITY CLASSES ───────────────── */
+/* utility classes  */
 .sr-only {
   position: absolute;
   width: 1px;
@@ -84,7 +82,7 @@ ul, ol {
   border: 0;
 }
 
-/* Reveal animation base — JS adds .visible */
+/* reveal animation base — JS adds .visible */
 .reveal {
   opacity: 0;
   transform: translateY(40px);

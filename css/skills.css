@@ -1,7 +1,4 @@
-/* ═══════════════════════════════════
-   SKILLS SECTION
-   ═══════════════════════════════════ */
-
+/* skills */
 #skills {
     position: relative;
     padding: clamp(60px, 8vw, 100px) clamp(20px, 4vw, 60px);
@@ -37,7 +34,7 @@
     color: var(--purple-light);
 }
 
-/* ── GROUP ────────────────────────── */
+/* group */
 .skills-group {
     display: flex;
     flex-direction: column;
@@ -53,7 +50,7 @@
     justify-content: center;
 }
 
-/* ── GRID ─────────────────────────── */
+/* grid for skills */
 .skills-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -61,7 +58,7 @@
     width: 100%;
 }
 
-/* ── SKILL ITEM ───────────────────── */
+/* skill items */
 .skill-card {
     background: transparent;
     border: none;
@@ -94,7 +91,7 @@
     letter-spacing: 0.01em;
 }
 
-/* ── RESPONSIVE ───────────────────── */
+/* responsive */
 @media (max-width: 960px) {
     .skills-grid {
         grid-template-columns: repeat(2, 1fr);

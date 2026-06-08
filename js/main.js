@@ -1,8 +1,5 @@
-/* ═══════════════════════════════════════
-   MAIN.JS — Scroll reveals + Three.js bg
-   ═══════════════════════════════════════ */
 
-// ── SCROLL REVEAL ──────────────────────
+//scroll reveal 
 const revealObserver = new IntersectionObserver((entries) => {
   entries.forEach((entry, i) => {
     if (entry.isIntersecting) {
@@ -21,7 +18,7 @@ document.querySelectorAll('.reveal, .reveal-left, .reveal-right').forEach(el => 
 });
 
 
-// ── THREE.JS PARTICLE BACKGROUND ───────
+//three.js particle bk 
 (function initThree() {
   const canvas = document.getElementById('three-canvas');
   if (!canvas) return;

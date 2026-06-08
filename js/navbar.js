@@ -1,13 +1,11 @@
-/* ═══════════════════════════════════════
-   NAVBAR.JS
-   ═══════════════════════════════════════ */
+// js for navbar
 
 const navbar = document.getElementById('navbar');
 const hamburger = document.querySelector('.nav-hamburger');
 const mobileMenu = document.querySelector('.nav-mobile');
 const navLinks = document.querySelectorAll('.nav-link');
 
-// ── SHOW NAVBAR AFTER HERO ─────────────
+//show navbar after hero section is done
 const heroHeight = window.innerHeight;
 
 window.addEventListener('scroll', () => {
@@ -28,7 +26,7 @@ window.addEventListener('scroll', () => {
   highlightActive();
 });
 
-// ── ACTIVE SECTION HIGHLIGHT ───────────
+//highlight active section 
 function highlightActive() {
   const sections = document.querySelectorAll('section[id]');
   let current = '';
@@ -45,7 +43,7 @@ function highlightActive() {
   });
 }
 
-// ── SMOOTH SCROLL ON CLICK ─────────────
+//on click smooth scroll
 navLinks.forEach(link => {
   link.addEventListener('click', (e) => {
     e.preventDefault();
@@ -60,7 +58,7 @@ navLinks.forEach(link => {
   });
 });
 
-// ── HAMBURGER TOGGLE ───────────────────
+//hamburger toggle 
 hamburger.addEventListener('click', () => {
   hamburger.classList.toggle('open');
   mobileMenu.classList.toggle('open');

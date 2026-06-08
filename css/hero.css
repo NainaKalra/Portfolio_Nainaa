@@ -1,8 +1,6 @@
-/* ═══════════════════════════════════
-   HERO SECTION
-   ═══════════════════════════════════ */
+/* hero section styling */
 
-/* ── INTRO / ENTER SCREEN ─────────── */
+/* intro screen */
 #intro {
   position: fixed;
   inset: 0;
@@ -111,7 +109,7 @@
   color: var(--muted);
 }
 
-/* ── HERO SECTION ─────────────────── */
+/* hero section */
 #hero {
   position: relative;
   width: 100%;
@@ -158,7 +156,7 @@
   pointer-events: none;
 }
 
-/* ── HERO TEXT ────────────────────── */
+/* content */
 .hero-content {
   position: absolute;
   left: 9vw;
@@ -233,7 +231,7 @@
   animation: fadeIn 0.7s ease 0.8s forwards;
 }
 
-/* ── SCROLL HINT ──────────────────── */
+/* scroll down thing */
 .scroll-hint {
   position: absolute;
   bottom: 36px;
@@ -274,7 +272,7 @@
   animation: bounce 1.8s ease-in-out infinite;
 }
 
-/* ── HERO BUTTONS ─────────────────── */
+/* buttons*/
 .hero-btns {
   display: flex;
   gap: 14px;
@@ -323,7 +321,7 @@
   border-color: var(--purple-mid);
 }
 
-/* ── SOUND TOGGLE ─────────────────── */
+/* toggle for sound */
 .sound-btn {
   position: absolute;
   top: 28px;
@@ -353,7 +351,7 @@
   transform: scale(1.1);
 }
 
-/* ── KEYFRAMES ────────────────────── */
+/* keyframes */
 @keyframes fadeUp {
   from {
     opacity: 0;
@@ -417,11 +415,9 @@
   }
 }
 
-/* ══════════════════════════════════════
-   RESPONSIVE
-   ══════════════════════════════════════ */
+/* responsive styling */
 
-/* ── Mobile (≤767px) ──────────────── */
+/* mobile (≤767px)*/
 @media (max-width: 767px) {
   #hero {
     height: 100svh;
@@ -487,7 +483,7 @@
   }
 }
 
-/* ── Small mobile (≤480px) ────────── */
+/* small mobile (≤480px) */
 @media (max-width: 480px) {
   .hero-content {
     bottom: 14vh;
@@ -504,7 +500,7 @@
   }
 }
 
-/* ── Tablet: iPad Mini → iPad Pro (768px–1100px) ── */
+/* tablet: iPad Mini → iPad Pro (768px–1100px) */
 @media (min-width: 768px) and (max-width: 1100px) {
   #hero {
     height: 100svh;
@@ -555,7 +551,7 @@
 
   .hero-btns {
     flex-direction: row;
-    /* ← side-by-side on iPad */
+    /* side-by-side on iPad */
     margin-top: 2rem;
     gap: 14px;
   }

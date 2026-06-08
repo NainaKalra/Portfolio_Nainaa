@@ -1,6 +1,4 @@
-/* ═══════════════════════════════════
-   EXPERIENCE / ACTIVITIES SECTION
-   ═══════════════════════════════════ */
+/* activities section styling */
 
 #experience {
     position: relative;
@@ -34,7 +32,7 @@
     color: var(--purple-light);
 }
 
-/* ── TABS LAYOUT ──────────────────── */
+/* layout */
 .exp-tabs-section {
     display: flex;
     flex-direction: column;
@@ -57,7 +55,7 @@
     align-items: start;
 }
 
-/* ── LEFT LIST ────────────────────── */
+/* left list styling done */
 .exp-list {
     display: flex;
     flex-direction: column;
@@ -87,7 +85,7 @@
     box-shadow: 0 0 0 1px rgba(155, 119, 245, 0.25), 0 4px 24px rgba(124, 58, 237, 0.22);
 }
 
-/* ── TAB ICON — logo image ────────── */
+/* logo n icons  */
 .exp-tab-icon {
     width: 70px;
     height: 70px;
@@ -148,7 +146,7 @@
     color: var(--purple-light);
 }
 
-/* ── RIGHT DETAIL ─────────────────── */
+/* right details  */
 .exp-detail {
     background: rgba(16, 12, 32, 0.55);
     border: 1px solid rgba(211, 207, 228, 0.877);
@@ -239,7 +237,7 @@
 }
 
 
-/* ── DETAIL HEADER with logo ─────── */
+/*header with logo*/
 .exp-detail-header {
     display: flex;
     align-items: flex-start;
@@ -265,7 +263,7 @@
     opacity: 0.9;
 }
 
-/* ── RESPONSIVE ───────────────────── */
+/*responsive styling */
 @media (max-width: 768px) {
     .exp-tabs-wrap {
         grid-template-columns: 1fr;

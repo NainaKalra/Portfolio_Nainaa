@@ -1,6 +1,4 @@
-/* ═══════════════════════════════════
-   ABOUT SECTION — Final
-   ═══════════════════════════════════ */
+/* about section styling */
 #about {
     position: relative;
     min-height: 100vh;
@@ -35,9 +33,7 @@
     z-index: 1;
 }
 
-/* ══════════════════════════════════
-   LEFT — PHOTO
-══════════════════════════════════ */
+/* left side styling - photo  */
 .about-left {
     display: flex;
     flex-direction: column;
@@ -52,18 +48,18 @@
 
 .photo-img {
     width: 100%;
-    aspect-ratio: 4 / 5;
+    aspect-ratio: 6 / 5;
     object-fit: cover;
-    object-position: center 15%;
+    object-position: center 35%;
     display: block;
-    border-radius: 8px;
+    border-radius: 1000px;
     box-shadow:
         0 0 0 1px rgba(196, 181, 253, 0.14),
         0 40px 100px rgba(0, 0, 0, 0.6),
         0 0 60px rgba(124, 58, 237, 0.08);
 }
 
-/* subtle purple tint overlay on photo */
+/* for photo adding subtle purple tint */
 .photo-wrap::after {
     content: '';
     position: absolute;
@@ -93,36 +89,7 @@
     letter-spacing: 0.04em;
 }
 
-.about-location {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    background: rgba(16, 12, 30, 0.75);
-    border: 1px solid rgba(196, 181, 253, 0.15);
-    border-radius: 100px;
-    padding: 8px 16px;
-    backdrop-filter: blur(10px);
-}
-
-.location-dot {
-    width: 7px;
-    height: 7px;
-    border-radius: 50%;
-    background: #4ade80;
-    box-shadow: 0 0 10px rgba(74, 222, 128, 0.9);
-    flex-shrink: 0;
-}
-
-.location-text {
-    font-family: var(--font-body);
-    font-size: 0.75rem;
-    font-weight: 400;
-    color: rgba(248, 246, 255, 0.62);
-}
-
-/* ══════════════════════════════════
-   RIGHT — CONTENT
-══════════════════════════════════ */
+/* content styling - right side*/
 .about-right {
     display: flex;
     flex-direction: column;
@@ -177,7 +144,7 @@
     margin: 1.2rem 0;
 }
 
-/* ── STATS — big, stacked ─────────── */
+
 .about-stats {
     display: flex;
     gap: 44px;
@@ -210,7 +177,6 @@
     display: block;
 }
 
-/* ── INFO ─────────────────────────── */
 .about-info {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -241,7 +207,6 @@
     line-height: 1.4;
 }
 
-/* ── CTA ──────────────────────────── */
 .about-cta {
     display: flex;
     align-items: center;
@@ -295,7 +260,6 @@
     transform: translateY(-2px);
 }
 
-/* ── FUN FACT ─────────────────────── */
 .about-funfact {
     display: flex;
     flex-direction: column;
@@ -330,9 +294,7 @@
     font-style: italic;
 }
 
-/* ══════════════════════════════════
-   RESPONSIVE
-══════════════════════════════════ */
+/* responsive styling */
 @media (max-width: 960px) {
     #about {
         padding: 60px 6vw 80px;

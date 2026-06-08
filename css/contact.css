@@ -1,6 +1,4 @@
-/* ═══════════════════════════════════
-   CONTACT SECTION — Minimal Centered
-   ═══════════════════════════════════ */
+/* contact section styling */
 
 #connect {
     position: relative;
@@ -37,7 +35,8 @@
     text-align: center;
 }
 
-/* ── HEADER ───────────────────────── */
+/* header for contact  */
+
 .connect-header {
     display: flex;
     flex-direction: column;
@@ -78,7 +77,7 @@
     max-width: 480px;
 }
 
-/* ── FORM ─────────────────────────── */
+/* styled connect form */
 .connect-form {
     width: 100%;
     display: flex;
@@ -162,7 +161,7 @@
     transform: translateY(-2px);
 }
 
-/* ── SOCIAL ICONS ROW ─────────────── */
+
 .connect-socials {
     display: flex;
     align-items: center;
@@ -198,7 +197,7 @@
     box-shadow: 0 8px 20px rgba(124, 58, 237, 0.2);
 }
 
-/* ── FOOTER ───────────────────────── */
+/* footer styling  */
 .connect-footer {
     max-width: 100%;
     margin: 48px 0 0;
@@ -227,7 +226,7 @@
     color: var(--purple-light);
 }
 
-/* ── RESPONSIVE ───────────────────── */
+/* for responsive */
 @media (max-width: 600px) {
     .form-row {
         grid-template-columns: 1fr;
