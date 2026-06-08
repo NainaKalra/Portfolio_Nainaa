@@ -48,11 +48,11 @@
 
 .photo-img {
     width: 100%;
-    aspect-ratio: 6 / 5;
+    aspect-ratio: 5 / 5;
     object-fit: cover;
-    object-position: center 35%;
+    object-position: center;
     display: block;
-    border-radius: 1000px;
+    border-radius: 500px;
     box-shadow:
         0 0 0 1px rgba(196, 181, 253, 0.14),
         0 40px 100px rgba(0, 0, 0, 0.6),
