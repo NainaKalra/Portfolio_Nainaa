@@ -589,7 +589,18 @@
   <script>
     const video = document.getElementById('bg-video');
 
+    if (sessionStorage.getItem('entered')) {
+        document.getElementById('intro').classList.add('hidden');
+        document.getElementById('three-canvas').classList.add('visible');
+        ['h-first', 'h-last', 'h-rule', 'h-role', 'h-btns'].forEach(id => {
+          document.getElementById(id).classList.add('run');
+        });
+        document.getElementById('soundBtn').classList.add('run');
+        document.getElementById('scrollHint').classList.add('run');
+      }
+
     function enterSite() {
+      sessionStorage.setItem('entered', 'true'); 
       video.currentTime = 0;
       video.muted = false;
       video.play().catch(() => { video.muted = true; });
